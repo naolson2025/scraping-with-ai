@@ -23,12 +23,10 @@ export const dhsPayments = pgTable(
     expenseCategory: text('expense_category').notNull(),
     expenseType: text('expense_type').notNull(),
   },
-  (table) => ({
-    payeeIdx: index('dhs_payments_payee_idx').on(table.payee),
-    expenseCategoryIdx: index('dhs_payments_expense_category_idx').on(
-      table.expenseCategory,
-    ),
-  }),
+  (table) => [
+    index('dhs_payments_payee_idx').on(table.payee),
+    index('dhs_payments_expense_category_idx').on(table.expenseCategory),
+  ],
 );
 
 export type DhsPayment = typeof dhsPayments.$inferSelect;
