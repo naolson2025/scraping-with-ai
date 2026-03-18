@@ -10,3 +10,19 @@ I have downloaded payments data from the Minnesota transparency (website)[https:
 ## Outline
 - [x] Download government payments data (CSV format) from MN transparency open checkbook for the department of human services, which is where most of the fraud is happening.
 - [ ] Create a Postgres DB, Schema with Drizzle, and load the CSV data into the DB.
+- [ ] Manually scrape with `curl` to test it works
+```
+https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
+```
+- [ ] Have AI scrape. Provide the URL & business name. Prompt:
+```
+I'm searching businesses. Here is an example url:
+
+https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
+
+I want you to search the business "1 ALPHA & OMEGA DIVINE CARE SYSTEM INC" and then scrape the result to find the details link which looks like this:
+
+<a href="/Business/SearchDetails?filingGuid=3a969657-dd1d-ed11-9062-00155d01c614">Details</a>
+
+and then navigate to that page and scrape the business data and write it to a CSV file. Use curl to request the data.
+```
