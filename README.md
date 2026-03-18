@@ -10,6 +10,7 @@ I have downloaded payments data from the Minnesota transparency (website)[https:
 ## Outline
 - [x] Download government payments data (CSV format) from MN transparency open checkbook for the department of human services, which is where most of the fraud is happening.
 - [ ] Create a Postgres DB, Schema with Drizzle, and load the CSV data into the DB.
+- [ ] Add columns for the data in the SOS website to the database.
 - [ ] Manually scrape with `curl` to test it works
 ```
 https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
@@ -24,5 +25,27 @@ I want you to search the business "1 ALPHA & OMEGA DIVINE CARE SYSTEM INC" and t
 
 <a href="/Business/SearchDetails?filingGuid=3a969657-dd1d-ed11-9062-00155d01c614">Details</a>
 
-and then navigate to that page and scrape the business data and write it to a CSV file. Use curl to request the data.
+and then navigate to that page and scrape the business data. Use curl to request the data.
+
+Save the data to a JSON file with the following format:
+
+{
+  "businessName": "1 ALPHA & OMEGA DIVINE CARE SYSTEM INC",
+  "businessType": "Business Corporation (Domestic)",
+  "fileNumber": "1234567",
+  "filingDate": "01/01/2020",
+  "numberOfShares": "1000",
+  "chiefExecutiveOfficer": "Jane Smith",
+  "mailingAddress": "123 Main St, Anytown, MN 12345",
+  "mnStatute": "302A",
+  "homeJurisdiction": "Minnesota",
+  "status": "Active / In Good Standing",
+  "registeredOfficeAddress": "456 Elm St, Anytown, MN 12345",
+  "registeredAgents": [
+    "John Doe",
+    "Jane Doe"
+  ]
+}
 ```
+- [ ] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file.
+- [ ] Have AI create a drizzle query to load the scraped data into the database.
