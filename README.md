@@ -15,13 +15,13 @@ I have downloaded payments data from the Minnesota transparency (website)[https:
 - [x] Download government payments data (CSV format) from MN transparency open checkbook for the department of human services, which is where most of the fraud is happening.
 - [x] Create a Postgres DB, Schema with Drizzle, and load the CSV data into the DB.
 - [x] Add columns for the data in the SOS website to the database.
-- [ ] Manually scrape with `curl` to test it works
+- [x] Manually scrape with `curl` to test it works
 
 ```
 https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
 ```
 
-- [ ] Have AI scrape. Provide the URL & business name.
+- [x] Have AI scrape. Provide the URL & business name.
 
 ```
 Prompt:
