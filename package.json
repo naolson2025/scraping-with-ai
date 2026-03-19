@@ -10,7 +10,8 @@
     "import:payments": "bun run src/scripts/ingestPayments.ts",
     "import:payments:dry-run": "bun run src/scripts/ingestPayments.ts --dry-run",
     "import:businesses": "bun run src/scripts/ingestBusinesses.ts",
-    "import:businesses:dry-run": "bun run src/scripts/ingestBusinesses.ts --dry-run"
+    "import:businesses:dry-run": "bun run src/scripts/ingestBusinesses.ts --dry-run",
+    "scrape:businesses": "bun run src/scripts/scrapeBusinesses.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
