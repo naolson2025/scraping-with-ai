@@ -14,16 +14,17 @@ I have downloaded payments data from the Minnesota transparency (website)[https:
 
 - [x] Download government payments data (CSV format) from MN transparency open checkbook for the department of human services, which is where most of the fraud is happening.
 - [x] Create a Postgres DB, Schema with Drizzle, and load the CSV data into the DB.
-- [ ] Add columns for the data in the SOS website to the database.
+- [x] Add columns for the data in the SOS website to the database.
 - [ ] Manually scrape with `curl` to test it works
 
 ```
 https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
 ```
 
-- [ ] Have AI scrape. Provide the URL & business name. Prompt:
+- [ ] Have AI scrape. Provide the URL & business name.
 
 ```
+Prompt:
 I'm searching businesses. Here is an example url:
 
 https://mblsportal.sos.mn.gov/Business/BusinessSearch?BusinessName=the%20gardens%20at%20foley%20LLC&IncludePriorNames=False&Status=Active&Type=BeginsWith
@@ -55,8 +56,10 @@ Save the data to a JSON file with the following format:
 }
 ```
 
+- [ ] Have AI create a drizzle query to load the scraped data into the database from the JSON file (ignoring duplicates).
 - [ ] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file.
-- [ ] Have AI create a drizzle query to load the scraped data into the database.
+
+# Instructions
 
 ## Importing DHS CSV into Postgres
 
