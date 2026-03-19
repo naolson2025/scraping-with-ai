@@ -57,9 +57,12 @@ Save the data to a JSON file with the following format:
 ```
 
 - [ ] Have AI create a drizzle query to load the scraped data into the database from the JSON file (ignoring duplicates).
-- [ ] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file.
+- [ ] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file. Add a 5s delay between requests to avoid rate limiting.
+- [ ] Test the scraping script on a small batch of businesses and verify the data is correct.
+- [ ] Update the script to read business names from the `dhs_payments` table and scrape data for each unique business name, then load the data into a new table in the database. Allow me to set the batch size so I can test on a small batch first.
 
-# Instructions
+
+# Project Instructions
 
 ## Importing DHS CSV into Postgres
 
