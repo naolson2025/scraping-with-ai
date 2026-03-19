@@ -59,7 +59,7 @@ Save the data to a JSON file with the following format:
 - [x] Have AI create a drizzle query to load the scraped data into the database from the JSON file (ignoring duplicates).
 - [x] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file. Add a 5s delay between requests to avoid rate limiting.
 - [x] Test the scraping script on a small batch of businesses and verify the data is correct.
-- [ ] Update the script to read business names from the `dhs_payments` table and scrape data for each unique business name, then load the data into a new table in the database. Allow me to set the batch size so I can test on a small batch first.
+- [x] Update the script to read business names from the `dhs_payments` table and scrape data for each unique business name, then save the data in the business_data.json file. Allow me to set the batch size so I can test on a small batch first.
 
 # Project Instructions
 
@@ -123,3 +123,35 @@ bun run import:businesses --json ./business_data.json --batch-size 100
 ```
 
 The importer accepts either a single JSON object or an array of business objects. Re-running the same file is duplicate-safe: businesses are keyed by `file_number`, and registered agents are keyed by the `(business_id, agent_name)` pair.
+
+## Scraping Businesses from `dhs_payments`
+
+The scraper reads unique payee names from `dhs_payments`, queries the Minnesota SOS site, and appends results to `business_data.json`.
+
+### Commands
+
+1. Scrape with defaults (batch size 25, start at position 1):
+
+```bash
+bun run scrape:businesses
+```
+
+2. Dry run (show which businesses would be scraped, no network writes to output):
+
+```bash
+bun run scrape:businesses:dry-run
+```
+
+### Optional arguments
+
+```bash
+bun run scrape:businesses --batch-size 10 --offset 100
+```
+
+```bash
+bun run scrape:businesses:dry-run --batch-size 10 --offset 100
+```
+
+`--batch-size` controls how many businesses are selected.
+
+`--offset` is 1-based. For example, `--offset 100 --batch-size 10` selects businesses 100 through 109 from the ordered unique payee list.

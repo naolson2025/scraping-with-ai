@@ -80,5 +80,133 @@
     "registeredAgents": [
       "Ibrahim Abdullahi"
     ]
+  },
+  {
+    "businessName": "1st Alternative care LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1423006900028",
+    "filingDate": "10/25/2023",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": null,
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "APT E323, 10300 DEVONSHIRE CIR, BLOOMINGTON, MN 55431-5046, USA",
+    "registeredAgents": [
+      "Nada A Mohamed"
+    ]
+  },
+  {
+    "businessName": "1st Assured Care LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1416308000028",
+    "filingDate": "10/5/2023",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": "2705 HERSCHEL ST N # B319AT, ROSEVILLE, MN 55113-4487, Usa",
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "UNIT B319, 2705 HERSCHEL ST N, ROSEVILLE, MN 55113-4495, USA",
+    "registeredAgents": [
+      "(Optional) Currently No Agent"
+    ]
+  },
+  {
+    "businessName": "1st attentive services L.L.C.",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1138065800025",
+    "filingDate": "1/28/2020",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": "1229 east lake street, Minneapolis, MN 55407-5540, usa",
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "8101 vincent ave n, brooklyn park, MN 55444-5544, USA",
+    "registeredAgents": [
+      "(Optional) Currently No Agent"
+    ]
+  },
+  {
+    "businessName": "1st Care Inc",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "1091355900029",
+    "filingDate": "7/2/2019",
+    "numberOfShares": "100",
+    "chiefExecutiveOfficer": "Abdikarim M Kalid",
+    "mailingAddress": null,
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "10966 Ashley LN, Woodbury, MN 55129, USA",
+    "registeredAgents": [
+      "Abdikarim Muse Kalid"
+    ]
+  },
+  {
+    "businessName": "1st Choice4ALL Home Care Inc.",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "1400308400027",
+    "filingDate": "7/18/2023",
+    "numberOfShares": "1",
+    "chiefExecutiveOfficer": "Ubah Kerow",
+    "mailingAddress": null,
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "4470 W 78TH STREET CIR # 259, BLOOMINGTON, MN 55435-5408, USA",
+    "registeredAgents": [
+      "(Optional) Currently No Agent"
+    ]
+  },
+  {
+    "businessName": "1st Choice Care, Inc.",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "2409017-2",
+    "filingDate": "06/22/2007",
+    "numberOfShares": "300",
+    "chiefExecutiveOfficer": "Anthony PATRICIA Anya",
+    "mailingAddress": null,
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "9035 Blaisdell Ave S, Blmgtn, MN 55420, USA",
+    "registeredAgents": [
+      "(Optional) Currently No Agent"
+    ]
+  },
+  {
+    "businessName": "1st Choice Home LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1137769700020",
+    "filingDate": "1/27/2020",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": null,
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "1440 E Old Shakopee Rd., Bloomington, MN 55425, USA",
+    "registeredAgents": [
+      "Abdifatah Abdullahi"
+    ]
+  },
+  {
+    "businessName": "1st Grade Care Inc",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "1132716700027",
+    "filingDate": "1/7/2020",
+    "numberOfShares": "100",
+    "chiefExecutiveOfficer": "Shehaan Hussein",
+    "mailingAddress": null,
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "20657 Kaiser Way, Lakeville, MN 55044, USA",
+    "registeredAgents": [
+      "Shehaan A Hussein"
+    ]
   }
 ]
