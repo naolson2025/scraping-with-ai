@@ -30,6 +30,15 @@ export const dhsPayments = pgTable(
   (table) => [
     index('dhs_payments_payee_idx').on(table.payee),
     index('dhs_payments_expense_category_idx').on(table.expenseCategory),
+    uniqueIndex('dhs_payments_row_signature_uidx').on(
+      table.paymentAmount,
+      table.budgetPeriod,
+      table.agency,
+      table.payee,
+      table.accountCode,
+      table.expenseCategory,
+      table.expenseType,
+    ),
   ],
 );
 

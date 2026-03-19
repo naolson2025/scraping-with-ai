@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "dhs_payments_row_signature_uidx" ON "dhs_payments" USING btree ("payment_amount","budget_period","agency","payee","account_code","expense_category","expense_type");

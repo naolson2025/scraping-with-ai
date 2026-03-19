@@ -6,7 +6,9 @@
   "scripts": {
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "import:payments": "bun run src/scripts/ingestPayments.ts",
+    "import:payments:dry-run": "bun run src/scripts/ingestPayments.ts --dry-run"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -17,6 +19,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "csv-parse": "^6.1.0",
     "drizzle-orm": "^0.45.1",
     "pg": "^8.20.0"
   }
