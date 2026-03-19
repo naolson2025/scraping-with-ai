@@ -25,19 +25,20 @@ function parseArgs(argv: string[]): CliArgs {
 
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
+    const nextArg = argv[i + 1];
     if (arg === '--dry-run') {
       dryRun = true;
       continue;
     }
 
-    if (arg === '--csv' && argv[i + 1]) {
-      csvPath = argv[i + 1];
+    if (arg === '--csv' && nextArg !== undefined) {
+      csvPath = nextArg;
       i += 1;
       continue;
     }
 
-    if (arg === '--batch-size' && argv[i + 1]) {
-      const parsed = Number.parseInt(argv[i + 1], 10);
+    if (arg === '--batch-size' && nextArg !== undefined) {
+      const parsed = Number.parseInt(nextArg, 10);
       if (!Number.isNaN(parsed) && parsed > 0) {
         batchSize = parsed;
       }
@@ -92,12 +93,22 @@ async function run(): Promise<void> {
 
   for (let i = 0; i < records.length; i += 1) {
     const rowNumber = i + 2;
-    const parsed = parsePaymentRow(records[i], rowNumber);
+    const row = records[i];
+    if (!row) {
+      rejectedRows.push({
+        rowNumber,
+        reason: 'Row is missing from parsed CSV output.',
+        row: {},
+      });
+      continue;
+    }
+
+    const parsed = parsePaymentRow(row, rowNumber);
     if (!parsed.ok) {
       rejectedRows.push({
         rowNumber,
         reason: parsed.error,
-        row: records[i],
+        row,
       });
       continue;
     }
