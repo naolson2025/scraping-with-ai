@@ -1,17 +1,36 @@
-{
-  "businessName": "1 ALPHA & OMEGA DIVINE CARE SYSTEM, INC.",
-  "businessType": "Business Corporation (Domestic)",
-  "fileNumber": "1326695000029",
-  "filingDate": "8/16/2022",
-  "numberOfShares": "1000000",
-  "chiefExecutiveOfficer": "Pending Pending Pending",
-  "mailingAddress": "P.O Box 1681, MAPLE GROVE, MN 55311-6681, U.S.A",
-  "mnStatute": "302A",
-  "homeJurisdiction": "Minnesota",
-  "status": "Active / In Good Standing",
-  "registeredOfficeAddress": "14697 80th PL. N. Suite# ML, PO Box 1681, MAPLE GROVE, MN 55311-6681, USA",
-  "registeredAgents": [
-    "ANTHONY ADANENE",
-    "NOELA N SUHFOR"
-  ]
-}
+[
+  {
+    "businessName": "1 ALPHA & OMEGA DIVINE CARE SYSTEM, INC.",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "1326695000029",
+    "filingDate": "8/16/2022",
+    "numberOfShares": "1000000",
+    "chiefExecutiveOfficer": "Pending Pending Pending",
+    "mailingAddress": "P.O Box 1681, MAPLE GROVE, MN 55311-6681, U.S.A",
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "14697 80th PL. N. Suite# ML, PO Box 1681, MAPLE GROVE, MN 55311-6681, USA",
+    "registeredAgents": [
+      "ANTHONY ADANENE",
+      "NOELA N SUHFOR"
+    ]
+  },
+  {
+    "businessName": "The Gardens at Foley LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1091584200027",
+    "filingDate": "7/5/2019",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": "8833 Gross point rd, Suite 208, Skokie, IL 60077, United States",
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "638 Southbend Ave, Mankato, MN 56001, USA",
+    "registeredAgents": [
+      "Josh Legum",
+      "William Stern"
+    ]
+  }
+]
