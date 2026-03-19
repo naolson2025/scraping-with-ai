@@ -32,5 +32,53 @@
       "Josh Legum",
       "William Stern"
     ]
+  },
+  {
+    "businessName": "1 on 1 Comprehensive Healthcare Solution LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1308263300022",
+    "filingDate": "4/8/2022",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": null,
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "14967 95TH PL N, MAPLE GROVE, MN 55369-8537, USA",
+    "registeredAgents": [
+      "Karlu Dorleh"
+    ]
+  },
+  {
+    "businessName": "1 nation home care Inc",
+    "businessType": "Business Corporation (Domestic)",
+    "fileNumber": "1265104700024",
+    "filingDate": "10/20/2021",
+    "numberOfShares": "2",
+    "chiefExecutiveOfficer": "Niman Issa Ahmed",
+    "mailingAddress": null,
+    "mnStatute": "302A",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "7972 bloomington ave, bloomington, MN 55425, USA",
+    "registeredAgents": [
+      "(Optional) Currently No Agent"
+    ]
+  },
+  {
+    "businessName": "1 PLUS, LLC",
+    "businessType": "Limited Liability Company (Domestic)",
+    "fileNumber": "1351789900024",
+    "filingDate": "11/28/2022",
+    "numberOfShares": null,
+    "chiefExecutiveOfficer": null,
+    "mailingAddress": "405 Cedar Ave S, Minneapolis, MN 55454, USA",
+    "mnStatute": "322C",
+    "homeJurisdiction": "Minnesota",
+    "status": "Active / In Good Standing",
+    "registeredOfficeAddress": "1935 COUNTY ROAD B2 W, STE 405, ROSEVILLE, MN 55113-2797, USA",
+    "registeredAgents": [
+      "Ibrahim Abdullahi"
+    ]
   }
 ]
