@@ -56,11 +56,10 @@ Save the data to a JSON file with the following format:
 }
 ```
 
-- [ ] Have AI create a drizzle query to load the scraped data into the database from the JSON file (ignoring duplicates).
+- [x] Have AI create a drizzle query to load the scraped data into the database from the JSON file (ignoring duplicates).
 - [ ] Have AI write a script to automate the scraping where I can give a list of business names and it will scrape the data for each business and append it to a JSON file. Add a 5s delay between requests to avoid rate limiting.
 - [ ] Test the scraping script on a small batch of businesses and verify the data is correct.
 - [ ] Update the script to read business names from the `dhs_payments` table and scrape data for each unique business name, then load the data into a new table in the database. Allow me to set the batch size so I can test on a small batch first.
-
 
 # Project Instructions
 
@@ -98,3 +97,29 @@ bun run import:payments --csv ./2026-dept-HS-payments-data.csv --batch-size 1000
 ### Idempotency behavior
 
 Imports are duplicate-safe. Re-running the same CSV does not create duplicate rows. A unique index on the full payment row signature is enforced and inserts use conflict-ignore semantics.
+
+## Importing Scraped Business JSON into Postgres
+
+The project includes a typed JSON importer for scraped SOS business records in `business_data.json`.
+
+### Commands
+
+1. Validate the JSON without writing to DB:
+
+```bash
+bun run import:businesses:dry-run
+```
+
+2. Import into `businesses` and `business_registered_agents`:
+
+```bash
+bun run import:businesses
+```
+
+### Optional arguments
+
+```bash
+bun run import:businesses --json ./business_data.json --batch-size 100
+```
+
+The importer accepts either a single JSON object or an array of business objects. Re-running the same file is duplicate-safe: businesses are keyed by `file_number`, and registered agents are keyed by the `(business_id, agent_name)` pair.
